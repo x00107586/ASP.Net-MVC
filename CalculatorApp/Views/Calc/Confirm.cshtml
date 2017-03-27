@@ -1,0 +1,42 @@
+﻿@model CalculatorApp.Models.Calculator
+
+@{
+    ViewBag.Title = "Confirm";
+}
+
+<h2>Confirm</h2>
+
+<div>
+    <h4>Calculator</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NumA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumB)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumB)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Result)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Result)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
